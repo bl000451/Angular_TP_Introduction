@@ -1,0 +1,15 @@
+<mat-sidenav-container>
+    <mat-sidenav [(opened)]="opened" mode="side">
+        <mat-list>
+            <mat-list-item><a routerLink="/devoirs">Liste des devoirs</a></mat-list-item>
+            <mat-list-item><a routerLink="/devoirs">Ajout d'un devoir</a></mat-list-item>
+            <mat-list-item><a routerLink="/devoirs">Modification d'un devoir</a></mat-list-item>
+            <mat-list-item><a routerLink="/devoirs">Suppression d'un devoir</a></mat-list-item>
+            <mat-list-item><a routerLink="/">Génération de données de test</a></mat-list-item>
+        </mat-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <ng-content></ng-content>
+        <button mat-button (click)="opened=!opened">Menu</button>
+    </mat-sidenav-content>
+</mat-sidenav-container>

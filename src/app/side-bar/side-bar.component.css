@@ -1,0 +1,11 @@
+mat-sidenav-container {
+    height: calc(205vh - 115vh);
+}
+
+mat-sidenav {
+    display: flex;
+}
+
+.mat-toolbar-row {
+    flex-wrap: wrap;
+  }

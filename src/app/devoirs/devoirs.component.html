@@ -1,0 +1,10 @@
+<p>{{titre}}</p>
+
+<div *ngFor="let assignment of assignments">
+    <p *ngIf="assignment.rendu; else nonsoumis">
+        Le devoir intitulé {{assignment.nom}}, a été rendu le {{assignment.dateDeRendu}}.
+    </p>
+    <ng-template #nonsoumis>
+        Le devoir intitulé {{assignment.nom}} n'a pas été rendu.
+    </ng-template>
+ </div>
